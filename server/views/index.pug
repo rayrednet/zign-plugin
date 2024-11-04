@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    if isZoom
+        h1.welcome-title Welcome to Zign
+        p Enhancing Zoom meetings with sign language support
+
+        .zign-info
+            h2 About Zign
+            p= zignInfo.description
+
+            h3 Key Features
+            ul
+                each feature in zignInfo.keyFeatures
+                    li= feature
+
+        .get-started
+            h3 Get Started
+            p Sign in with your Zoom account to start using Zign in your meetings.
+            a.button(href='/install') Install Zign app in Zoom
+    else
+        h1.welcome-title= title
+        .zign-info
+            h2 About Zign
+            p= zignInfo.description
+            
+            h3 Key Features
+            ul
+                each feature in zignInfo.keyFeatures
+                    li= feature
+
+        .get-started
+            p You're viewing Zign App through the browser
+            a.button(href='/install') Install Zign in Zoom
+
+append scripts
+    if isZoom
+        script(type="module" src='/js/bundle.mjs')
+        script(nomodule src='/js/bundle.js')

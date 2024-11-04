@@ -1,0 +1,113 @@
+body {
+  padding: 50px;
+  font-family: 'Inter', "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #2d5fe8;
+  text-decoration: none;
+}
+
+.welcome-title {
+  color: #2d5fe8;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+p, h2, h3, ul {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.zign-info, .get-started {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(45, 95, 232, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  margin: 1.5rem 0;
+}
+
+ul li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+ul li::before {
+  content: "✓";
+  color: #2d5fe8;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.get-started {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #2d5fe8;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1c45b5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 95, 232, 0.2);
+}
+
+h2 {
+  color: #1a1a1a;
+  font-size: 1.8em;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #1a1a1a;
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .welcome-title {
+    font-size: 2em;
+  }
+
+  .zign-info, .get-started {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .button {
+    padding: 0.75rem 1.5rem;
+  }
+}
